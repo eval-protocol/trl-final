@@ -50,7 +50,7 @@ logging.info("[Init] Logging configured (HOTLOAD_DEBUG=%s)", _hotload_debug)
 # Minimal inline config (sample values for PR)
 # ---------------------------------------------------------------------------
 MODEL_ID = "Qwen/Qwen3-8B"
-INFER_MODEL_ID = "fireworks_ai/accounts/fireworks/models/qwen3-8b#accounts/pyroworks/deployments/h6mxm330"
+INFER_MODEL_ID = "fireworks_ai/accounts/fireworks/models/qwen3-8b#accounts/<account_id>/deployments/<deployment_id>"
 MAX_STEPS = 2
 MAX_TOKENS = 64
 TEMPERATURE = 1.0
