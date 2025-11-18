@@ -50,7 +50,7 @@ logging.info("[Init] Logging configured (HOTLOAD_DEBUG=%s)", _hotload_debug)
 # Minimal inline config (sample values for PR)
 # ---------------------------------------------------------------------------
 MODEL_ID = "Qwen/Qwen3-8B"
-INFER_MODEL_ID = "fireworks_ai/accounts/fireworks/models/qwen3-8b#accounts/pyroworks/deployments/h6mxm330"
+INFER_MODEL_ID = "fireworks_ai/accounts/fireworks/models/qwen3-8b#accounts/<account_id>/deployments/<deployment_id>"
 MAX_STEPS = 2
 MAX_TOKENS = 64
 TEMPERATURE = 1.0
@@ -76,8 +76,8 @@ PEFT_ALPHA = float(cfg.get("peft", {}).get("lora_alpha", 32))
 PEFT_TARGET = cfg.get("peft", {}).get("target_modules", "all-linear")
 
 # Fireworks hotload config
-FW_ACCOUNT_ID = "pyroworks"
-FW_DEPLOYMENT_ID = "h6mxm330"
+FW_ACCOUNT_ID = "<account_id>"
+FW_DEPLOYMENT_ID = "<deployment_id>"
 FW_MODEL_ID_PREFIX = "openenv-browsergym"
 FW_HOTLOAD_EVERY_N = 1
 FW_PROBE_AFTER = True
